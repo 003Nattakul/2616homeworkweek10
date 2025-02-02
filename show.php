@@ -40,7 +40,7 @@
         if(isset($_GET['action_even'])=='del'){
         //echo "Test";
 
-        $PlayerID = $_GET['employee_id'];
+        $PlayerID = $_GET['PlayerID'];
         $sql="SELECT * FROM footballplayers WHERE PlayerID=$PlayerID";
         // echo $sql;
         $result = $conn->query($sql);
@@ -63,7 +63,7 @@
     }
     ?>
     <h1>ตารางแสดงข้อมูลนักฟุตบอล</h1>
-    <table id="employees" class="table table-striped" style="width:100%">
+    <table id="footballplayers" class="table table-striped" style="width:100%">
     <h4> พัฒนาโดย 653485003 นายณัฐกุล จิระศิริโชติ หมู่เรียน 26.16 </h4>
         <thead>
             <tr>
